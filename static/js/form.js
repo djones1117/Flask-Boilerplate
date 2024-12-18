@@ -17,7 +17,7 @@ $(document).ready(function() {
             contentType: "application/json; charset=utf-8",// Set the content type to JSON
             dataType: "json",// Expect a JSON response from the server
             success: function(data) {
-                // On success, update the div with id 'response' with the received response message
+                // On success, update the div with id 'response' with the received response message //this represents sendback.response on backend
                 $("#response").text(data.response);
             },
             error: function(errMsg) {
